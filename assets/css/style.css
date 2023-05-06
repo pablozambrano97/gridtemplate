@@ -1,0 +1,171 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+ul{
+    list-style: none;
+    gap: 15px; 
+}
+
+h4{
+    text-align: center;
+    margin: 0%;
+}
+
+p{
+    margin: 0%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    grid-area: header;
+    background-color: #f3f3f7;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: 160px;
+    height: 80px;
+}
+nav ul{
+    display: flex;  
+}
+
+nav div{
+    display: flex;
+    gap: 15px;
+}    
+
+nav button{
+    border-radius: 25px;
+}
+
+nav button:hover{
+    background-color: #d2ced2;
+
+}
+
+button img{
+    height: 30px;
+    width: 30px;
+}
+
+.main{
+    grid-area: main;
+    background-color: #f8f8f8;
+    overflow-y: scroll;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid-product{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #5c5a64;
+    width: 14rem;
+    border-radius: 15px;
+    transition: 1s ease;
+}
+
+.card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.card img{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card button{
+    width: 14rem;
+    height: 2em;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+}
+
+.card button:hover{
+    background-color: #d2ced2;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:#999999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    width: 160px;
+    height: 80px;
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img{
+    width: 48px;
+    height: 48px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #f6f6e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+}
+
+.sidebar ul{
+    padding: 0%;
+    line-height: 20px;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header header" 
+    "sidebar main main" 
+    "footer footer footer";
+    width: 100vw;
+    height: 100vh;
+}
